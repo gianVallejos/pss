@@ -4,7 +4,7 @@ import './logo-header.css'
 
 function LogoHeader(props){
   return(
-    <a href={"/"} className="LogoHeader">
+    <a href={"/pss"} className="LogoHeader">
       <img className="LogoHeader-imagen" src={logotipo} />
       <h1 className="LogoHeader-titulo">{ props.title }</h1>
     </a>
