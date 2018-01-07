@@ -1,0 +1,40 @@
+@import "../../sass/variables.sass"
+
+.Navegacion
+    padding-top: 25px
+    padding-bottom: 30px
+
+.Navegacion-ul
+
+.Navegacion-li
+    height: 40px
+    line-height: 40px
+    vertical-align: middle
+    transition: .3s
+    padding-left: 38px
+    will-change: background
+    &:hover
+      background: #f0c94f
+    a
+      display: block
+      color: #3d3c3c
+      &:hover
+        animation-name: navigationLink
+        animation-duration: .4s
+        animation-fill-mode: forwards
+        text-decoration: none
+        will-change: translate, opacity
+
+.Navegacion-imagen
+  display: inline-block
+  margin-right: 10px
+
+.Navegacion-txt
+    transition: .4s
+    opacity: 1
+
+@keyframes showNavegationText
+  from
+    opacity: 0
+  to
+    opacity: 1

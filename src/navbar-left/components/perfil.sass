@@ -1,0 +1,56 @@
+@import '../../sass/variables.sass'
+
+$height: 90px
+$height-active: 145px
+
+$p-t: 22px
+$p-t-active: 25px
+
+$p-l: 10px
+$p-l-active: 34px
+
+.Perfil
+  background: url('../../images/background-perfil.jpg')
+  height: $height-active
+  padding-top: 25px
+  padding-left: 34px
+  font-family: $font-text
+  font-size: .8em
+  animation-name: showPerfil
+  animation-duration: .3s
+  animation-fill-mode: forwards
+
+.Perfil-imagen
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  background: #ddd
+
+.Perfil-nombre
+  margin-top: 9px
+  display: block
+  transition: .5s
+  opacity: 1
+
+
+.Perfil-rol
+  color: #5c5c5c
+  transition: .5s
+  opacity: 1
+
+
+@keyframes showPerfil
+    from
+      height: 90px
+      padding-top: 20px
+      padding-left: 10px
+    to
+      height: 145px
+      padding-top: 25px
+      padding-left: 34px
+
+@keyframes elementDisappear
+  from
+    opacity: 0
+  to
+    opacity: 1

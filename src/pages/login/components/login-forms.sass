@@ -1,0 +1,52 @@
+@import "../../../sass/variables.sass"
+
+.LoginForms
+  font-family: $font-text
+  font-size: .82em
+
+.LoginForms-gd-input
+  padding: 10px 0px 10px 0px
+  &:first-of-type
+    padding-top: 20px
+
+.LoginForms-input
+  width: 300px
+  height: 32px
+  border: 1px solid $border-color-input
+  padding-left: 9px
+  color: $text-color
+  &::placeholder
+    font-weight: normal
+    color: #b5b4b4
+    font-size: 1em
+    font-family: $font-text
+  &:focus
+    outline: none
+    border-color: #989898
+
+.LoginForms-subbtns
+    padding: 6px 0px 14px 0px
+
+.LoginForms-checkbox
+    margin-right: 5px
+
+.LoginForms-label
+  color: #919292
+
+.LoginForms-Btn
+  width: 300px
+  height: 35px
+  border-radius: 4px
+  border: none
+  background: $btn-color
+  color: white
+  cursor: pointer
+  &:hover
+    background: #507869
+
+@media only screen and (max-width: 340px)
+  .LoginForms-input
+    width: 280px
+
+  .LoginForms-Btn
+    width: 280px

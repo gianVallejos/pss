@@ -1,0 +1,60 @@
+$size: 217px
+$size-active: 70px
+
+.NavbarLeftLayout
+  animation-name: showNavbarLeft
+  animation-duration: .6s
+  animation-fill-mode: forwards
+  position: fixed
+  width: $size
+  height: calc( 100vh - 55px)
+  background: #f1d47a
+
+.NavbarLeftLayout.active
+  animation-name: hideNavbarLeft
+  animation-duration: .6s
+  animation-fill-mode: forwards
+  animation-delay: .2s
+  .Perfil
+    padding-top: 25px
+    padding-left: 34px
+    animation-name: hidePerfil
+    animation-duration: .2s
+    animation-delay: .2s
+    animation-fill-mode: forwards
+  .Perfil-nombre
+    opacity: 0
+  .Perfil-rol
+    opacity: 0
+  .Navegacion-li
+    padding-left: 23px
+    &:hover
+      .Navegacion-txt
+        display: inline-block
+        position: absolute
+        padding-left: 28px
+        opacity: .9
+    .Navegacion-txt
+      opacity: 0
+
+@keyframes hideNavbarLeft
+    from
+      width: 217px
+    to
+      width: 70px
+
+@keyframes showNavbarLeft
+    from
+      width: 70px
+    to
+      width: 217px
+
+@keyframes hidePerfil
+  from
+    height: 145px
+    padding-top: 25px
+    padding-left: 34px
+  to
+    height: 90px
+    padding-top: 20px
+    padding-left: 10px

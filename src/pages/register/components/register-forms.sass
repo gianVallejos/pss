@@ -1,0 +1,51 @@
+@import "../../../sass/variables.sass"
+
+.RegisterForms
+  font-family: $font-text
+  font-size: .82em
+
+.RegisterForms-gd-input
+  padding: 5px 0px 5px 0px
+  &:first-of-type
+    padding-top: 15px
+
+.RegisterForms-input
+  width: 300px
+  height: 32px
+  border: 1px solid $border-color-input
+  padding-left: 9px
+  color: $text-color
+  &::placeholder
+    font-weight: normal
+    color: #b5b4b4
+    font-size: 1em
+    font-family: $font-text
+  &:focus
+    outline: none
+    border-color: #989898
+
+.RegisterForms-checkbox
+    margin-right: 5px
+
+.RegisterForms-label
+  color: #919292
+  padding-top: 15px
+  padding-left: 12px
+
+.RegisterForms-Btn
+  width: 300px
+  height: 35px
+  border-radius: 4px
+  border: none
+  background: $btn-color
+  color: white
+  cursor: pointer
+  &:hover
+    background: #507869
+
+@media only screen and (max-width: 340px)
+  .RegisterForms-input
+    width: 280px
+
+  .RegisterForms-Btn
+    width: 280px
