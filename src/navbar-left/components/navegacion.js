@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Link} from 'react-router-dom'
+import {a} from 'react-router-dom'
 
 import './navegacion.css'
 
@@ -18,52 +18,52 @@ function Navegacion(props){
       <div id="navegacion" className="Navegacion">
         <ul className="Navegacion-ul">
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconDash} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Dashboard</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconVentas} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Ventas</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconPackage} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Productos</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconCart} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Compras</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconSilhouette} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Proveedores</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconCalculator} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Contabilidad</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconUser} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Usuarios</span>
-            </Link>
+            </a>
           </li>
           <li className="Navegacion-li">
-            <Link to={"/"}>
+            <a href={"/"}>
               <img src={IconDash} width={20} className="Navegacion-imagen" />
               <span className="Navegacion-txt">Ajustes</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

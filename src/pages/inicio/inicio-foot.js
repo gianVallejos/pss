@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Row, Col} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+
 import './inicio-foot.css'
 
 class InicioFoot extends Component{
@@ -13,9 +13,9 @@ class InicioFoot extends Component{
           <span className="InicioFoot-texto">{ this.props.titulo }</span>
         </Col>
         <Col sm={12}>
-          <Link to={this.props.linkBoton}>
+          <a href={this.props.linkBoton}>
               <button className="InicioFoot-btn">{ this.props.textoBoton }</button>
-          </Link>
+          </a>
         </Col>
         <Col sm={12}>
           <span className="InicioFoot-copy">{sello}</span>
