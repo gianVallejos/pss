@@ -12,13 +12,4 @@ import { Switch } from 'react-router'
 import './index.css'
 
 const $app = document.getElementById('home')
-ReactDOM.render(
-              <BrowserRouter>
-                  <Switch>
-                    <Route path="/" exact component={Dashboard} />
-                    <Route path="/login" exact component={Login} />
-                    <Route path="/register" exact component={Register} />
-                    <Route path="/forgot" exact component={ForgotPassword} />
-                  </Switch>
-              </BrowserRouter>
-, $app)
+ReactDOM.render( <Dashboard />, $app)
