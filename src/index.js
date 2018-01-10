@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Dashboard from './pages/dashboard/containers/dashboard'
+import App from './App'
 
 import './index.css'
 
 const $app = document.getElementById('home')
-ReactDOM.render( <Dashboard />, $app)
+ReactDOM.render( <App />, $app)

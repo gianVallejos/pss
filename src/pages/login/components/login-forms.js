@@ -23,7 +23,7 @@ function LoginForms (props){
                     <input className="LoginForms-checkbox" type="checkbox" name="recuerdame" />Recordarme</label>
               </Col>
               <Col sm={7}>
-                <Link to={'/forgot'} className="LoginForms-olvidastePass">¿Olvidaste tu contraseña?</Link>
+                <Link to='/forgotPass' className="LoginForms-olvidastePass">¿Olvidaste tu contraseña?</Link>
               </Col>
             </Row>
             <Row>

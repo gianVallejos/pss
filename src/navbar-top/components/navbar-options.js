@@ -5,6 +5,8 @@ import notificacionImg from '../../images/iconos/header/bell.svg'
 import logoutImg from '../../images/iconos/header/exit.svg'
 import arrowDown from '../../images/iconos/header/arrow-down.svg'
 
+import {Link} from 'react-router-dom'
+
 function NavbarOptions(props){
     return(
         <div className="NavbarOptions">
@@ -12,10 +14,12 @@ function NavbarOptions(props){
             <img src={notificacionImg} width={17} />
             <img src={arrowDown} width={10} />
           </div>
+          <Link to="/login">
           <div className="NavbarOptions-cerrar">
             <img src={logoutImg} width={35} />
-            <span className="NavbarOptions-icono">Cerrar sesión</span>
+              <span className="NavbarOptions-icono">Cerrar sesión</span>
           </div>
+          </Link>
         </div>
     )
 }
