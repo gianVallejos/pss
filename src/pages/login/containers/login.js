@@ -36,7 +36,7 @@ class Login extends Component{
                     handleLoginClick={ this.handleLoginClick }
                 />
               ):(
-                <Redirect to="/dashboard" />
+                <Redirect to="/pss/dashboard" />
               )
             }
             <InicioFoot

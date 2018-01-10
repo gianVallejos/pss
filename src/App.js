@@ -16,11 +16,11 @@ class App extends Component{
       <BrowserRouter>
       <div>
 
-        <Route exact path='/' component={Login} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/dashboard' component={Dashboard} />
-        <Route exact path='/register' component={Register} />
-        <Route exact path='/forgotPass' component={ForgotPass} />
+        <Route exact path='/pss/' component={Login} />
+        <Route exact path='/pss/login' component={Login} />
+        <Route exact path='/pss/dashboard' component={Dashboard} />
+        <Route exact path='/pss/register' component={Register} />
+        <Route exact path='/pss/forgotPass' component={ForgotPass} />
 
       </div>
       </BrowserRouter>
